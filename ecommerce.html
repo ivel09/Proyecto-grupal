@@ -14,14 +14,16 @@
   </head>
   <body>
     <main>
+      
       <article class="slider-box">
         <ul>
-          <li><img src="./img/slider14.png" alt="" /></li>
+          <li><img src="./img/slider22.png" alt="" /></li>
           <li><img src="./img/slider7.jpg" alt="" /></li>
-          <li><img src="./img/slider12.png" alt="" /></li>
+          <li><img src="./img/slider21.jpg" alt="" /></li>
           <li><img src="./img/slider11.jpg" alt="" /></li>
         </ul>
       </article>
+
       <article class="art2">
         <div class="logo-container">
           <img src="./img/mejor.png" alt="" />
@@ -32,8 +34,126 @@
             personas… sino a potenciar su grandeza. Juntos, somos imbatibles."
           </p>
         </div>
-        <div class="cards"></div>
+        <div class="cards">
+          <div class="container">
+            <header>
+              <h1>Onboarding para E-commerce</h1>
+              <p>Por favor, responde estas preguntas para personalizar tu solución</p>
+            </header>
+
+            <form id="onboardingForm">
+              <!-- Información general del negocio -->
+              <section class="form-section">
+                <h2>Información General del Negocio</h2>
+                <div class="form-group">
+                  <label for="nombreEmpresa">¿Cuál es el nombre de tu empresa y tu tienda online?</label>
+                  <input type="text" id="nombreEmpresa" name="nombreEmpresa" required />
+                </div>
+                <div class="form-group">
+                  <label for="rubro">¿En qué categoría o rubro se encuentran tus productos?</label>
+                  <input type="text" id="rubro" name="rubro" placeholder="Ej: moda, electrónica, alimentos" required />
+                </div>
+                <div class="form-group">
+                  <label for="publico">¿Cuál es tu público objetivo principal?</label>
+                  <input type="text" id="publico" name="publico" placeholder="Ej: personas 20-35 años, familias, empresas" required />
+                </div>
+              </section>
+
+              <!-- Información sobre productos -->
+              <section class="form-section">
+                <h2>Información sobre Productos</h2>
+                <div class="form-group">
+                  <label for="cantidadProductos">¿Cuántos productos tienes actualmente en tu catálogo?</label>
+                  <input type="number" id="cantidadProductos" name="cantidadProductos" min="1" required />
+                </div>
+                <div class="form-group">
+                  <label>¿Tus productos tienen variaciones (tallas, colores, presentaciones)?</label>
+                  <div class="radio-group">
+                    <label class="radio-option"><input type="radio" name="variaciones" value="Sí" required> Sí</label>
+                    <label class="radio-option"><input type="radio" name="variaciones" value="No"> No</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>¿Tienes fotos y descripciones listas para subir?</label>
+                  <div class="radio-group">
+                    <label class="radio-option"><input type="radio" name="contenidoListo" value="Sí" required> Sí</label>
+                    <label class="radio-option"><input type="radio" name="contenidoListo" value="No"> No</label>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Plataforma y operaciones -->
+              <section class="form-section">
+                <h2>Plataforma y Operaciones</h2>
+                <div class="form-group">
+                  <label for="plataforma">¿En qué plataforma está tu tienda online?</label>
+                  <input type="text" id="plataforma" name="plataforma" placeholder="Ej: Shopify, WooCommerce, Mercado Libre, personalizada" required />
+                </div>
+                <div class="form-group">
+                  <label for="inventario">¿Cómo gestionas tu inventario?</label>
+                  <select id="inventario" name="inventario" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="excel">Con Excel o Google Sheets</option>
+                    <option value="sistema">Con un sistema (ERP, POS, etc.)</option>
+                    <option value="manual">Manualmente (sin registro digital)</option>
+                    <option value="ninguno">No tengo control formal</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="pedidosMensuales">¿Cuántos pedidos haces en promedio por mes?</label>
+                  <input type="number" id="pedidosMensuales" name="pedidosMensuales" min="0" placeholder="Ej: 50, 100, 500" required />
+                </div>
+              </section>
+
+              <!-- Procesos de compra -->
+              <section class="form-section">
+                <h2>Procesos de Compra y Logística</h2>
+                <div class="form-group">
+                  <label for="metodosPago">Métodos de pago que aceptas</label>
+                  <input type="text" id="metodosPago" name="metodosPago" placeholder="Ej: tarjeta, Yape, Plin, transferencia, contra entrega" required />
+                </div>
+                <div class="form-group">
+                  <label for="politicaEnvios">Política de envíos (cobertura, tiempos, costos)</label>
+                  <textarea id="politicaEnvios" name="politicaEnvios" placeholder="Ej: Envíos a todo Perú, 2-5 días hábiles, desde S/8.90" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="logistica">¿Con qué empresas de envíos trabajas?</label>
+                  <input type="text" id="logistica" name="logistica" placeholder="Ej: Olva Courier, Shalom, Serpost, Fashtech" required />
+                </div>
+                <div class="form-group">
+                  <label for="politicaCambios">Política de devoluciones o cambios</label>
+                  <textarea id="politicaCambios" name="politicaCambios" placeholder="Ej: Cambios en 30 días, producto sin usar y con etiqueta" required></textarea>
+                </div>
+              </section>
+
+              <!-- Atención al cliente -->
+              <section class="form-section">
+                <h2>Atención al Cliente y Experiencia</h2>
+                <div class="form-group">
+                  <label for="dudasFrecuentes">Dudas frecuentes de tus clientes antes de comprar</label>
+                  <textarea id="dudasFrecuentes" name="dudasFrecuentes" placeholder="Ej: ¿Qué talla me queda? ¿Tienen garantía? ¿Cuándo llega mi pedido?" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="canalesSoporte">Canales de soporte actuales</label>
+                  <input type="text" id="canalesSoporte" name="canalesSoporte" placeholder="Ej: WhatsApp, email, redes sociales" required />
+                </div>
+                <div class="form-group">
+                  <label for="fidelizacion">¿Tienes alguna estrategia para fidelizar clientes o seguimiento postventa?</label>
+                  <textarea id="fidelizacion" name="fidelizacion" placeholder="Ej: correos de agradecimiento, descuentos, programa de referidos"></textarea>
+                </div>
+              </section>
+
+              <button type="submit">Enviar Respuestas</button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+              <h2>¡Gracias por tu información! 🎉</h2>
+              <p>Pronto nos contactaremos contigo para personalizar tu solución.</p>
+            </div>
+          </div>
+        </div>
       </article>
     </main>
+    <script src="./javascript/ecommerce.js"></script>
   </body>
 </html>
