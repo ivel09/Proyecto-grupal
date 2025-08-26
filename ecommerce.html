@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/ecommerce.css" />
-    <title>Document</title>
+    <title>Onboarding E-commerce - Botia.tech</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      
       <article class="slider-box">
         <ul>
-          <li><img src="./img/slider22.png" alt="" /></li>
-          <li><img src="./img/slider7.jpg" alt="" /></li>
-          <li><img src="./img/slider21.jpg" alt="" /></li>
+          <li><img src="./img/slider26.avif" alt="" /></li>
+          <li><img src="./img/slider27.jpg" alt="" /></li>
+          <li><img src="./img/slider23.jpg" alt="" /></li>
           <li><img src="./img/slider11.jpg" alt="" /></li>
         </ul>
       </article>
@@ -34,11 +37,29 @@
             personas… sino a potenciar su grandeza. Juntos, somos imbatibles."
           </p>
         </div>
+
+        <!-- Acceso al dashboard -->
+        <a href="./index.html" class="boton1-panel">Inicio</a>
+
+        <a href="./dashboard.html" class="boton-panel">Panel Admin</a>
+
+        <a
+          href="https://wa.me/+51977446314?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Botia.tech"
+          class="whatsapp-btn"
+          title="Chatea con nosotros por WhatsApp"
+          target="_blank"
+        >
+          <img src="./img/social.png" alt="WhatsApp" />
+        </a>
+
         <div class="cards">
           <div class="container">
             <header>
               <h1>Onboarding para E-commerce</h1>
-              <p>Por favor, responde estas preguntas para personalizar tu solución</p>
+              <p>
+                Por favor, responde estas preguntas para personalizar tu
+                solución
+              </p>
             </header>
 
             <form id="onboardingForm">
@@ -46,16 +67,40 @@
               <section class="form-section">
                 <h2>Información General del Negocio</h2>
                 <div class="form-group">
-                  <label for="nombreEmpresa">¿Cuál es el nombre de tu empresa y tu tienda online?</label>
-                  <input type="text" id="nombreEmpresa" name="nombreEmpresa" required />
+                  <label for="nombreEmpresa"
+                    >¿Cuál es el nombre de tu empresa y tu tienda online?</label
+                  >
+                  <input
+                    type="text"
+                    id="nombreEmpresa"
+                    name="nombreEmpresa"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="rubro">¿En qué categoría o rubro se encuentran tus productos?</label>
-                  <input type="text" id="rubro" name="rubro" placeholder="Ej: moda, electrónica, alimentos" required />
+                  <label for="rubro"
+                    >¿En qué categoría o rubro se encuentran tus
+                    productos?</label
+                  >
+                  <input
+                    type="text"
+                    id="rubro"
+                    name="rubro"
+                    placeholder="Ej: moda, electrónica, alimentos"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="publico">¿Cuál es tu público objetivo principal?</label>
-                  <input type="text" id="publico" name="publico" placeholder="Ej: personas 20-35 años, familias, empresas" required />
+                  <label for="publico"
+                    >¿Cuál es tu público objetivo principal?</label
+                  >
+                  <input
+                    type="text"
+                    id="publico"
+                    name="publico"
+                    placeholder="Ej: personas 20-35 años, familias, empresas"
+                    required
+                  />
                 </div>
               </section>
 
@@ -63,21 +108,57 @@
               <section class="form-section">
                 <h2>Información sobre Productos</h2>
                 <div class="form-group">
-                  <label for="cantidadProductos">¿Cuántos productos tienes actualmente en tu catálogo?</label>
-                  <input type="number" id="cantidadProductos" name="cantidadProductos" min="1" required />
+                  <label for="cantidadProductos"
+                    >¿Cuántos productos tienes actualmente en tu
+                    catálogo?</label
+                  >
+                  <input
+                    type="number"
+                    id="cantidadProductos"
+                    name="cantidadProductos"
+                    min="1"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label>¿Tus productos tienen variaciones (tallas, colores, presentaciones)?</label>
+                  <label
+                    >¿Tus productos tienen variaciones (tallas, colores,
+                    presentaciones)?</label
+                  >
                   <div class="radio-group">
-                    <label class="radio-option"><input type="radio" name="variaciones" value="Sí" required> Sí</label>
-                    <label class="radio-option"><input type="radio" name="variaciones" value="No"> No</label>
+                    <label class="radio-option"
+                      ><input
+                        type="radio"
+                        name="variaciones"
+                        value="Sí"
+                        required
+                      />
+                      Sí</label
+                    >
+                    <label class="radio-option"
+                      ><input type="radio" name="variaciones" value="No" />
+                      No</label
+                    >
                   </div>
                 </div>
                 <div class="form-group">
-                  <label>¿Tienes fotos y descripciones listas para subir?</label>
+                  <label
+                    >¿Tienes fotos y descripciones listas para subir?</label
+                  >
                   <div class="radio-group">
-                    <label class="radio-option"><input type="radio" name="contenidoListo" value="Sí" required> Sí</label>
-                    <label class="radio-option"><input type="radio" name="contenidoListo" value="No"> No</label>
+                    <label class="radio-option"
+                      ><input
+                        type="radio"
+                        name="contenidoListo"
+                        value="Sí"
+                        required
+                      />
+                      Sí</label
+                    >
+                    <label class="radio-option"
+                      ><input type="radio" name="contenidoListo" value="No" />
+                      No</label
+                    >
                   </div>
                 </div>
               </section>
@@ -86,22 +167,43 @@
               <section class="form-section">
                 <h2>Plataforma y Operaciones</h2>
                 <div class="form-group">
-                  <label for="plataforma">¿En qué plataforma está tu tienda online?</label>
-                  <input type="text" id="plataforma" name="plataforma" placeholder="Ej: Shopify, WooCommerce, Mercado Libre, personalizada" required />
+                  <label for="plataforma"
+                    >¿En qué plataforma está tu tienda online?</label
+                  >
+                  <input
+                    type="text"
+                    id="plataforma"
+                    name="plataforma"
+                    placeholder="Ej: Shopify, WooCommerce, Mercado Libre, personalizada"
+                    required
+                  />
                 </div>
                 <div class="form-group">
                   <label for="inventario">¿Cómo gestionas tu inventario?</label>
                   <select id="inventario" name="inventario" required>
                     <option value="">Selecciona una opción</option>
                     <option value="excel">Con Excel o Google Sheets</option>
-                    <option value="sistema">Con un sistema (ERP, POS, etc.)</option>
-                    <option value="manual">Manualmente (sin registro digital)</option>
+                    <option value="sistema">
+                      Con un sistema (ERP, POS, etc.)
+                    </option>
+                    <option value="manual">
+                      Manualmente (sin registro digital)
+                    </option>
                     <option value="ninguno">No tengo control formal</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="pedidosMensuales">¿Cuántos pedidos haces en promedio por mes?</label>
-                  <input type="number" id="pedidosMensuales" name="pedidosMensuales" min="0" placeholder="Ej: 50, 100, 500" required />
+                  <label for="pedidosMensuales"
+                    >¿Cuántos pedidos haces en promedio por mes?</label
+                  >
+                  <input
+                    type="number"
+                    id="pedidosMensuales"
+                    name="pedidosMensuales"
+                    min="0"
+                    placeholder="Ej: 50, 100, 500"
+                    required
+                  />
                 </div>
               </section>
 
@@ -110,19 +212,47 @@
                 <h2>Procesos de Compra y Logística</h2>
                 <div class="form-group">
                   <label for="metodosPago">Métodos de pago que aceptas</label>
-                  <input type="text" id="metodosPago" name="metodosPago" placeholder="Ej: tarjeta, Yape, Plin, transferencia, contra entrega" required />
+                  <input
+                    type="text"
+                    id="metodosPago"
+                    name="metodosPago"
+                    placeholder="Ej: tarjeta, Yape, Plin, transferencia, contra entrega"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="politicaEnvios">Política de envíos (cobertura, tiempos, costos)</label>
-                  <textarea id="politicaEnvios" name="politicaEnvios" placeholder="Ej: Envíos a todo Perú, 2-5 días hábiles, desde S/8.90" required></textarea>
+                  <label for="politicaEnvios"
+                    >Política de envíos (cobertura, tiempos, costos)</label
+                  >
+                  <textarea
+                    id="politicaEnvios"
+                    name="politicaEnvios"
+                    placeholder="Ej: Envíos a todo Perú, 2-5 días hábiles, desde S/8.90"
+                    required
+                  ></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="logistica">¿Con qué empresas de envíos trabajas?</label>
-                  <input type="text" id="logistica" name="logistica" placeholder="Ej: Olva Courier, Shalom, Serpost, Fashtech" required />
+                  <label for="logistica"
+                    >¿Con qué empresas de envíos trabajas?</label
+                  >
+                  <input
+                    type="text"
+                    id="logistica"
+                    name="logistica"
+                    placeholder="Ej: Olva Courier, Shalom, Serpost, Fashtech"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="politicaCambios">Política de devoluciones o cambios</label>
-                  <textarea id="politicaCambios" name="politicaCambios" placeholder="Ej: Cambios en 30 días, producto sin usar y con etiqueta" required></textarea>
+                  <label for="politicaCambios"
+                    >Política de devoluciones o cambios</label
+                  >
+                  <textarea
+                    id="politicaCambios"
+                    name="politicaCambios"
+                    placeholder="Ej: Cambios en 30 días, producto sin usar y con etiqueta"
+                    required
+                  ></textarea>
                 </div>
               </section>
 
@@ -130,16 +260,38 @@
               <section class="form-section">
                 <h2>Atención al Cliente y Experiencia</h2>
                 <div class="form-group">
-                  <label for="dudasFrecuentes">Dudas frecuentes de tus clientes antes de comprar</label>
-                  <textarea id="dudasFrecuentes" name="dudasFrecuentes" placeholder="Ej: ¿Qué talla me queda? ¿Tienen garantía? ¿Cuándo llega mi pedido?" required></textarea>
+                  <label for="dudasFrecuentes"
+                    >Dudas frecuentes de tus clientes antes de comprar</label
+                  >
+                  <textarea
+                    id="dudasFrecuentes"
+                    name="dudasFrecuentes"
+                    placeholder="Ej: ¿Qué talla me queda? ¿Tienen garantía? ¿Cuándo llega mi pedido?"
+                    required
+                  ></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="canalesSoporte">Canales de soporte actuales</label>
-                  <input type="text" id="canalesSoporte" name="canalesSoporte" placeholder="Ej: WhatsApp, email, redes sociales" required />
+                  <label for="canalesSoporte"
+                    >Canales de soporte actuales</label
+                  >
+                  <input
+                    type="text"
+                    id="canalesSoporte"
+                    name="canalesSoporte"
+                    placeholder="Ej: WhatsApp, email, redes sociales"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="fidelizacion">¿Tienes alguna estrategia para fidelizar clientes o seguimiento postventa?</label>
-                  <textarea id="fidelizacion" name="fidelizacion" placeholder="Ej: correos de agradecimiento, descuentos, programa de referidos"></textarea>
+                  <label for="fidelizacion"
+                    >¿Tienes alguna estrategia para fidelizar clientes o
+                    seguimiento postventa?</label
+                  >
+                  <textarea
+                    id="fidelizacion"
+                    name="fidelizacion"
+                    placeholder="Ej: correos de agradecimiento, descuentos, programa de referidos"
+                  ></textarea>
                 </div>
               </section>
 
@@ -148,12 +300,155 @@
 
             <div class="success-message" id="successMessage">
               <h2>¡Gracias por tu información! 🎉</h2>
-              <p>Pronto nos contactaremos contigo para personalizar tu solución.</p>
+              <p>
+                Tu código de referencia es:
+                <strong id="referenceCode">BOT-2024-XXXX</strong>
+              </p>
+              <p>
+                Pronto nos contactaremos contigo para personalizar tu solución.
+              </p>
+              <div style="margin-top: 20px">
+                <a
+                  href="dashboard.html"
+                  style="
+                    background: #005fdd;
+                    color: white;
+                    padding: 12px 24px;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    display: inline-block;
+                    font-weight: bold;
+                  "
+                >
+                  <i class="bi bi-speedometer2"></i> Ver Dashboard
+                </a>
+                <a
+                  href="index.html"
+                  style="
+                    background: #6c757d;
+                    color: white;
+                    padding: 12px 24px;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    display: inline-block;
+                    font-weight: bold;
+                    margin-left: 10px;
+                  "
+                >
+                  <i class="bi bi-house"></i> Volver al Inicio
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </article>
     </main>
-    <script src="./javascript/ecommerce.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("onboardingForm");
+        const successMessage = document.getElementById("successMessage");
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Capturar todos los datos del formulario (manteniendo estructura original)
+          const formData = new FormData(form);
+          const data = {};
+
+          for (let [key, value] of formData.entries()) {
+            data[key] = value.trim();
+          }
+
+          // Crear objeto cliente con estructura para dashboard
+          const clienteCompleto = {
+            // Datos base para dashboard
+            id: generarIdUnico(),
+            codigo: generarCodigoReferencia(),
+            tipo: "ecommerce",
+            empresa: data.nombreEmpresa || "Sin nombre",
+            contacto: "Cliente E-commerce",
+            email: generarEmailTemporal(data.nombreEmpresa),
+            telefono: generarTelefonoTemporal(),
+            timestamp: new Date().toISOString(),
+            estado: "completado",
+
+            // Datos originales del formulario (sin cambios)
+            datosOriginales: data,
+          };
+
+          // Guardar en localStorage para dashboard (clave unificada)
+          const submissions = JSON.parse(
+            localStorage.getItem("botiaSubmissions") || "[]"
+          );
+          submissions.push(clienteCompleto);
+          localStorage.setItem("botiaSubmissions", JSON.stringify(submissions));
+
+          // Mantener también el localStorage original (para compatibilidad)
+          const submissionsOriginal = JSON.parse(
+            localStorage.getItem("onboardingSubmissions") || "[]"
+          );
+          submissionsOriginal.push({
+            id: Date.now(),
+            date: new Date().toLocaleString(),
+            data: data,
+          });
+          localStorage.setItem(
+            "onboardingSubmissions",
+            JSON.stringify(submissionsOriginal)
+          );
+
+          // Mostrar código de referencia en mensaje de éxito
+          const codeElement = document.getElementById("referenceCode");
+          if (codeElement) {
+            codeElement.textContent = clienteCompleto.codigo;
+          }
+
+          // Mostrar en consola (manteniendo línea original)
+          console.log("✅ Respuesta guardada:", data);
+          console.log("📊 Datos para dashboard:", clienteCompleto);
+
+          // Ocultar formulario y mostrar mensaje de éxito (original)
+          form.style.display = "none";
+          successMessage.style.display = "block";
+
+          // Opcional: redirigir o enviar a servidor (comentario original mantenido)
+          // Aquí puedes llamar a fetch() para enviar a un backend
+        });
+
+        // Funciones auxiliares
+        function generarIdUnico() {
+          return (
+            Date.now().toString(36) + Math.random().toString(36).substr(2, 5)
+          );
+        }
+
+        function generarCodigoReferencia() {
+          const año = new Date().getFullYear();
+          const numero = Math.floor(Math.random() * 10000)
+            .toString()
+            .padStart(4, "0");
+          return `BOT-${año}-${numero}`;
+        }
+
+        function generarEmailTemporal(nombreEmpresa) {
+          if (!nombreEmpresa) return "cliente@ecommerce.com";
+          const empresa = nombreEmpresa
+            .toLowerCase()
+            .replace(/[^a-z0-9]/g, "")
+            .substring(0, 10);
+          return `${empresa}@ecommerce.com`;
+        }
+
+        function generarTelefonoTemporal() {
+          return (
+            "999" +
+            Math.floor(Math.random() * 1000000)
+              .toString()
+              .padStart(6, "0")
+          );
+        }
+      });
+    </script>
   </body>
 </html>
